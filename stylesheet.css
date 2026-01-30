@@ -1,0 +1,272 @@
+body {
+    font-family: verdana,Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #601EF9;
+}
+
+.home h1{
+    color: white;
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-outcubic-bezier(0.69,-0.2, 0, 1.77);
+}
+
+@keyframes glow {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.home nav ul {
+    display: flex;        /* makes items row-wise */
+    gap: 20px;            /* space between items */
+    list-style: none;     /* removes dots */
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* centers the nav items */
+    border: 3px solid;
+    border-radius: 50cm;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px 60px;
+}
+
+.home nav ul li a {
+    
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50px;
+    /*transition: background-color 0.01s ease-out, transform 0.01s ease-out;*/
+}
+
+@keyframes glow {
+    50% {box-shadow: 0px 0px 50px yellowgreen;}
+}
+
+.home nav ul li a:hover {
+  background-color: white;
+  transform: scale(1.1);
+  animation-name: glow;
+animation-duration: 2s;
+}
+
+.home nav ul li a { 
+    border-color: black;
+}
+
+
+.home .introduction {
+    margin-top: 3cm;
+    font-weight: bold;
+    text-align: center;
+    color: beige;
+    border: 3px solid;
+    border-radius: 20px;
+    border-color: black;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    transition: background-color 0.3s fade-out, transform 0.3s fade-out;
+}
+
+.home .introduction:hover {
+    background-color: #601EF9;
+    transform: scale(1.02);
+}
+
+.home .introduction h2 {
+    color: black;
+    font-weight: bold;;
+}
+
+.home .introduction li a {
+    color: black;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.skills h1 {
+    color: white;
+    text-align: center;
+    font-size: 2cm;
+}
+
+.skills h1{
+    color: white;
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.skills .aboutskill {
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-left: 10cm;
+    margin-right: 10cm;
+    padding: 10px 10px;
+    margin-top: 2cm;
+    transition: background-color 0.3s fade-out, transform 0.3s fade-out;
+}
+
+.skills .aboutskill:hover {
+    background-color: #601EF9;
+    transform: scale(1.02);
+}
+
+.skills .aboutskill li a {
+    list-style: none;
+    color: bisque;
+    justify-items: center;
+}
+
+.projects h1 {
+    color: white;
+    text-align: center;
+    font-size: 2cm;
+    font-weight: bold
+}
+
+.projects h1{
+    color: white;
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.projects .aboutproject {
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    padding: 10px 10px;
+    margin-top: 2cm;
+    transition: background-color 0.3s fade-out, transform 0.3s fade-out;
+}
+
+.projects .aboutproject:hover {
+    background-color: #601EF9;
+    transform: scale(1.02);
+}
+
+.projects .Glimpse-of-my-project  p {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: bisque;
+}
+
+.contact h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2cm;
+}
+
+.contact h1{
+    color: white;
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.contact .aboutcontact {
+    font-weight: bold;
+    border: 2px solid;
+    border-radius: 10px;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    padding: 10px 10px;
+    margin-top: 2cm;
+    transition: background-color 0.3s fade-out, transform 0.3s fade-out;
+}
+
+.contact .aboutcontact:hover {
+    background-color: #601EF9;
+    transform: scale(1.02);
+}
+
+.contact .reviewbox {
+    font-weight: bolder;
+    justify-items: center;
+    color: white;
+}
+
+.contact .reviewbox textarea {
+    width: 250px;
+    height: 100px;
+    margin-left: 15cm;
+    margin-right: 15cm;
+}
+
+.contact .reviewbox button {
+    font-weight: bolder;
+    margin-left: 17.5cm;
+    margin-right: 17.5cm;
+    margin-top: 0.5cm;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+ 
+.contact .reviewbox button:hover {
+    background-color: yellowgreen;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:600px){
+    .home nav ul {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home .introduction {
+        margin-left: 1cm;
+        margin-right: 1cm;
+    }
+
+    .skills .aboutskill {
+        margin-left: 1cm;
+        margin-right: 1cm;
+    }
+
+    .projects .aboutproject {
+        margin-left: 1cm;
+        margin-right: 1cm;
+    }
+
+    .contact .aboutcontact {
+        margin-left: 1cm;
+        margin-right: 1cm;
+    }
+
+    .contact .reviewbox textarea {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact .reviewbox button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
